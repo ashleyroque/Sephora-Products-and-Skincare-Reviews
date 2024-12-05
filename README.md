@@ -1,38 +1,75 @@
 # Sephora Product Analysis  
 
-## 📄 Full Project Write-Up  
-You can find the full details of this project, including insights and results, **[HERE](https://yourlinkhere.com)**.  
-
 ## 📜 Project Overview  
-This project analyzes the relationship between the price of skincare products and their customer ratings on Sephora. Additionally, it identifies which product categories, such as cleansers, moisturizers, and serums, tend to have the highest customer ratings. By addressing these objectives, the project offers valuable insights into customer satisfaction and product performance, helping businesses optimize their offerings.  
+This project analyzes the relationship between the price of skincare products and their customer ratings on Sephora. It also examines product categories, such as cleansers, moisturizers, and sunscreens, to identify which tend to receive the highest customer ratings. The findings aim to provide actionable insights for businesses to optimize their product offerings and enhance customer satisfaction.  
+
+---
 
 ## 🎯 Goals  
-- **Analyze the correlation** between product price and customer ratings.  
-- **Identify top-performing product categories** based on average ratings.  
-- Provide actionable insights to improve product strategies and customer satisfaction.  
+1. **Determine if a correlation exists** between product price and customer ratings.  
+2. **Identify top-rated product categories** based on customer feedback.  
+3. Provide data-driven recommendations to help businesses improve their product strategies.  
+
+---
 
 ## 🛠️ Methodology  
-1. **Data Cleaning and Preprocessing:**  
-   - Removed missing values and inconsistencies.  
-   - Categorized products into general and specific categories (e.g., moisturizers, serums).  
 
-2. **Exploratory Data Analysis (EDA):**  
-   - Visualized the distribution of product prices and ratings.  
-   - Explored trends between pricing and customer ratings.  
+### **1. Data Preprocessing**  
+Preprocessing ensured that the data was clean, consistent, and ready for analysis.  
 
-3. **Statistical Analysis:**  
-   - Used correlation analysis to assess the relationship between price and ratings.  
+- **Data Inspection:**  
+  Reviewed the dataset for missing or null values.  
 
-4. **Category Analysis:**  
-   - Calculated average ratings for each product category to determine the top performers.  
+- **Handling Missing Values:**  
+  - Filled categorical fields like `skin_tone`, `eye_color`, and `skin_type` with the placeholder `'unknown'`.  
+  - Replaced missing text fields like reviews or titles with `'no review'` or `'no title'`.  
+
+- **Standardizing Values:**  
+  - Lowercased text in fields to ensure consistency (e.g., `"Moisturizer"` became `"moisturizer"`).  
+  - Ensured numerical columns were properly formatted.  
+
+- **Adding Product Categories:**  
+  - Manually categorized products into groups such as cleansers, moisturizers, masks, sunscreens, lip balms, and wellness items using Sephora’s website as a reference.  
+
+### **2. Data Visualization and Analysis**  
+
+- **Correlation Analysis:**  
+  - Assessed the relationship between product price and customer ratings.  
+  - Found a weak correlation, suggesting price has little influence on customer ratings.  
+
+- **Category Performance Analysis:**  
+  - Created bar graphs to display the average ratings within each category.  
+  - Identified moisturizers as the top-rated category, followed by cleansers and sunscreens.  
+
+---
 
 ## 📊 Results  
-- **Correlation Insights:** Determined if higher-priced products tend to receive better ratings or if other factors drive customer satisfaction.  
-- **Category Performance:** Identified product categories with the highest average customer ratings.  
 
-## 🌟 Significance  
-The findings from this project will help businesses:  
-- Understand what drives customer satisfaction beyond pricing.  
-- Focus on high-performing categories to improve their product lineup.  
+1. **Correlation Insights:**  
+   - Weak correlation between price and ratings indicates that other factors, such as product quality or user experience, are more impactful in shaping customer feedback.  
 
----  
+2. **Category Performance:**  
+   - **Top-rated categories:**  
+     - Moisturizers  
+     - Cleansers  
+     - Sunscreens  
+
+---
+
+## 🌟 Key Learnings  
+
+- **Customer Priorities:**  
+  Price alone does not determine customer satisfaction. Businesses should focus on enhancing product quality and effectiveness.  
+
+- **Category Strengths:**  
+  Products in the moisturizer, cleanser, and sunscreen categories consistently meet customer expectations and represent opportunities for growth.  
+
+---
+
+## 🚀 Impact  
+
+By leveraging these findings, businesses can:  
+- Reassess pricing strategies to align with customer value perception.  
+- Focus on high-performing product categories to drive satisfaction and loyalty.  
+- Use data insights to inform product development and marketing strategies.  
+
